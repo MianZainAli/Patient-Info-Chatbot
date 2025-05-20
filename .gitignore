@@ -1,0 +1,102 @@
+# Node modules
+node_modules/
+**/node_modules/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.env
+*.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Build output
+build/
+dist/
+out/
+*.log
+
+# Coverage
+coverage/
+*.lcov
+
+# dotenv environment variables
+.env
+.env.*
+!.env.example
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test output
+*.test.js.snap
+*.test.ts.snap
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+.pnp*
+*.tgz
+
+# React specific
+*.map
+
+# Local database
+data/
+db.sqlite3
+*.sqlite3
+
+# Output of npm pack
+*.tgz
+
+# REPL history
+.node_repl_history
+
+# TypeScript
+*.tsbuildinfo
+
+# Next.js
+.next/
+
+# Mac system files
+.AppleDouble
+.LSOverride
+
+# Windows system files
+ehthumbs.db
+Desktop.ini
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Parcel-bundler cache
+.cache/
+
+# SASS cache
+.sass-cache/
+
+# Firebase
+.firebase/
+
+# VS Code settings
+.history/
