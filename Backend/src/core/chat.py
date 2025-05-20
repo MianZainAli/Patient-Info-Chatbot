@@ -131,6 +131,25 @@ class InferenceAPIChain:
             print(f"Exception during API call: {e}")
             return "Sorry, I'm having trouble connecting to my language processing service right now."
 
+    def query_huggingface(self, prompt):
+        """
+        Query the Hugging Face model with a prompt.
+        """
+        try:
+            # Use environment variable instead of hardcoded token
+            api_token = os.environ.get("HUGGINGFACE_API_TOKEN")
+            
+            if not api_token:
+                logger.error("HUGGINGFACE_API_TOKEN environment variable not set")
+                return "I'm having trouble connecting to my knowledge base. Please try again later."
+                
+            # Rest of your existing code using api_token instead of the hardcoded value
+            headers = {"Authorization": f"Bearer {api_token}"}
+            # ...existing code...
+        except Exception as e:
+            logger.error(f"Error querying Hugging Face: {str(e)}")
+            return "I encountered an error processing your request."
+
 
 def generate_pdf(conversation):
     pdf = FPDF()

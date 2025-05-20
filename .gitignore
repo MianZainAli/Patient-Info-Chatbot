@@ -27,6 +27,7 @@ coverage/
 *.lcov
 
 # dotenv environment variables
+env
 .env
 .env.*
 !.env.example
