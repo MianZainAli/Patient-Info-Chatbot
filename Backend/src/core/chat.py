@@ -166,7 +166,7 @@ def generate_pdf(conversation):
     return pdf_path
 
 
-HUGGINGFACE_API_TOKEN = "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" 
+HUGGINGFACE_API_TOKEN = "" 
 
 whisper_model = load_whisper_model()
 api_chain = InferenceAPIChain(HUGGINGFACE_API_TOKEN)
